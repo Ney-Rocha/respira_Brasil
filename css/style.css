@@ -1,6 +1,819 @@
-@import url(../font/stylesheet.css);
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('HelveticaLTStd-BoldObl.eot');
+    src: url('HelveticaLTStd-BoldObl.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaLTStd-BoldObl.woff2') format('woff2'),
+        url('HelveticaLTStd-BoldObl.woff') format('woff'),
+        url('HelveticaLTStd-BoldObl.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('HelveticaLTStd-BoldCondObl.eot');
+    src: url('HelveticaLTStd-BoldCondObl.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaLTStd-BoldCondObl.woff2') format('woff2'),
+        url('HelveticaLTStd-BoldCondObl.woff') format('woff'),
+        url('HelveticaLTStd-BoldCondObl.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('HelveticaLTStd-UltraComp.eot');
+    src: url('HelveticaLTStd-UltraComp.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaLTStd-UltraComp.woff2') format('woff2'),
+        url('HelveticaLTStd-UltraComp.woff') format('woff'),
+        url('HelveticaLTStd-UltraComp.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('HelveticaLTStd-BlkCondObl.eot');
+    src: url('HelveticaLTStd-BlkCondObl.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaLTStd-BlkCondObl.woff2') format('woff2'),
+        url('HelveticaLTStd-BlkCondObl.woff') format('woff'),
+        url('HelveticaLTStd-BlkCondObl.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('HelveticaLTStd-LightCondObl.eot');
+    src: url('HelveticaLTStd-LightCondObl.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaLTStd-LightCondObl.woff2') format('woff2'),
+        url('HelveticaLTStd-LightCondObl.woff') format('woff'),
+        url('HelveticaLTStd-LightCondObl.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('HelveticaLTStd-BoldCond.eot');
+    src: url('HelveticaLTStd-BoldCond.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaLTStd-BoldCond.woff2') format('woff2'),
+        url('HelveticaLTStd-BoldCond.woff') format('woff'),
+        url('HelveticaLTStd-BoldCond.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('HelveticaLTStd-LightCond.eot');
+    src: url('HelveticaLTStd-LightCond.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaLTStd-LightCond.woff2') format('woff2'),
+        url('HelveticaLTStd-LightCond.woff') format('woff'),
+        url('HelveticaLTStd-LightCond.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('HelveticaLTStd-CondObl.eot');
+    src: url('HelveticaLTStd-CondObl.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaLTStd-CondObl.woff2') format('woff2'),
+        url('HelveticaLTStd-CondObl.woff') format('woff'),
+        url('HelveticaLTStd-CondObl.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('HelveticaLTStd-Obl.eot');
+    src: url('HelveticaLTStd-Obl.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaLTStd-Obl.woff2') format('woff2'),
+        url('HelveticaLTStd-Obl.woff') format('woff'),
+        url('HelveticaLTStd-Obl.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('HelveticaLTStd-Roman.eot');
+    src: url('HelveticaLTStd-Roman.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaLTStd-Roman.woff2') format('woff2'),
+        url('HelveticaLTStd-Roman.woff') format('woff'),
+        url('HelveticaLTStd-Roman.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('HelveticaLTStd-BlkCond.eot');
+    src: url('HelveticaLTStd-BlkCond.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaLTStd-BlkCond.woff2') format('woff2'),
+        url('HelveticaLTStd-BlkCond.woff') format('woff'),
+        url('HelveticaLTStd-BlkCond.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('HelveticaLTStd-BlkObl.eot');
+    src: url('HelveticaLTStd-BlkObl.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaLTStd-BlkObl.woff2') format('woff2'),
+        url('HelveticaLTStd-BlkObl.woff') format('woff'),
+        url('HelveticaLTStd-BlkObl.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('HelveticaLTStd-Blk.eot');
+    src: url('HelveticaLTStd-Blk.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaLTStd-Blk.woff2') format('woff2'),
+        url('HelveticaLTStd-Blk.woff') format('woff'),
+        url('HelveticaLTStd-Blk.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('HelveticaLTStd-Light.eot');
+    src: url('HelveticaLTStd-Light.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaLTStd-Light.woff2') format('woff2'),
+        url('HelveticaLTStd-Light.woff') format('woff'),
+        url('HelveticaLTStd-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('HelveticaLTStd-Cond.eot');
+    src: url('HelveticaLTStd-Cond.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaLTStd-Cond.woff2') format('woff2'),
+        url('HelveticaLTStd-Cond.woff') format('woff'),
+        url('HelveticaLTStd-Cond.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('HelveticaLTStd-Bold.eot');
+    src: url('HelveticaLTStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaLTStd-Bold.woff2') format('woff2'),
+        url('HelveticaLTStd-Bold.woff') format('woff'),
+        url('HelveticaLTStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('HelveticaLTStd-LightObl.eot');
+    src: url('HelveticaLTStd-LightObl.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaLTStd-LightObl.woff2') format('woff2'),
+        url('HelveticaLTStd-LightObl.woff') format('woff'),
+        url('HelveticaLTStd-LightObl.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('HelveticaLTStd-Comp.eot');
+    src: url('HelveticaLTStd-Comp.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaLTStd-Comp.woff2') format('woff2'),
+        url('HelveticaLTStd-Comp.woff') format('woff'),
+        url('HelveticaLTStd-Comp.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/***********************************************
+================= gerais =======================
+************************************************/
 
 body{
-    font-family: "Helvetica LT Std";
+    font-family:'Helvetica LT Std';
+    line-height: 1;
+    color:#5f5f5f;
+}
+
+/***********************************************
+================= bg cores ========================
+************************************************/
+
+.bg-blue{
+    background-color: #036bdf;
+    color: #fff;
+}
+.bg-green{
+    background-color: #008503;
+    color:#fff;
+}
+
+.bg-purple{
+    background-color: #6a3fec;
+    color:#fff;
+}
+
+.bg-gray{
+    background-color: #cccccc;
+}
+/***********************************************
+================= text cores ===================
+************************************************/
+.text-gray{
+    color:#5f5f5f!important;
+}
+.text-green{
+    color:#008503!important;
+}
+
+.text-purple{
+    color: #6a3fec!important;
+}
+
+/***********************************************
+================= border cores ===================
+************************************************/
+.border-green{
+    border:1px solid #008503;
+}
+
+.border-purple{
+    border: 1px solid #6a3fec;
+}
+
+.border-gray{
+    border: 1px solid #cccccc;
+}
+/***********************************************
+================= Logo header ==================
+************************************************/
+.navbar{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-brand{
+    display: flex;
+}
+.nav-logo {
+    width:112px;
+    height: 93px;
+}
+.nav-logo img{
+    width:100%;
+    height:auto;
+}
+
+.nav-name{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+    align-self: center;
+    color:#fff;
+}
+
+.nav-name p{
+    font-family:'Helvetica LT Std';
     font-style: normal;
+    font-weight: 300;
+    font-size:24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.nav-name h5{
+    font-family:'Helvetica LT Std';
+    font-weight: bold;
+    font-style: normal;
+    font-size:28px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    line-height: 1;
+}
+@media (max-width:768px){
+    .nav-name{
+        display: none;
+    }
+}
+
+/***********************************************
+================= menu header ==================
+************************************************/
+
+.nav-item.nav-link.item-menu{
+    font-family:'Helvetica LT Std';
+    font-weight: 400;
+    font-style: normal;
+    font-size:13px;
+    line-height: 1;
+    color:#fff;
+    text-transform:uppercase;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav-item.nav-link.item-menu:first-child{
+    margin-left: 0px;
+}
+.nav-item.nav-link.item-menu:last-child{
+    margin-right: 0px;
+}
+
+.navbar-toggler {
+    color:#fff;
+}
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus{
+    box-shadow: 0;
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+/***********************************************
+================= banner Doacao ==================
+************************************************/
+.banner_doacao{
+    background-image: url("/img/banner/banner_1.png");
+    background-size: cover;
+    background-position: center center;
+    background-size: no-repeat;
+}
+
+.content-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 45px 50px;
+    color: #5f5f5f;
+    text-align: right;
+}
+
+.subtitle-banner{
+    font-family:'Helvetica LT Std';
+    font-weight: 500;
+    font-style: normal;
+    line-height: .8;
+    font-size: 35px;
+    margin-bottom: 0;
+    
+}
+
+.title-banner{
+    font-family: "Helvetica LT Std";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 72px;
+    line-height: .8;
+    margin-bottom: 50px;
+}
+
+.text-banner{
+    font-family: "Helvetica LT Std";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+.button-banner{
+    margin-top:50px;
+}
+
+@media(max-width:767px){
+    .content-banner{
+        padding: 20px;
+    }
+    .title-banner {
+        font-size: 60px;
+    }
+}
+
+/***********************************************
+===========  Meta de arrecadação ===============
+************************************************/
+.target-body{
+    padding: 25px 30px;
+    border-radius: 6px;
+    margin-bottom: 35px;
+}
+
+
+.title-target{
+    font-family:'Helvetica LT Std';
+    font-size:25px;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 15px
+}
+
+.value-target{
+    font-family:'Helvetica LT Std';
+    font-size:40px;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;    
+}
+
+.text-target{
+    font-family:'Helvetica LT Std';
+    font-size:16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top:20px;
+    margin-bottom: 0;;
+}
+
+.text-target a{
+    font-family:'Helvetica LT Std';
+    font-size:16px;
+    font-style: normal;
+    font-weight: bold;
+    color: #008503;
+    border-bottom: 1px solid #008503;
+}
+.text-target a:hover{
+    color: #008503;
+    text-decoration: none;
+    border-bottom: 1px solid #008503;
+}
+
+/***********************************************
+===============  lista Doadores ================
+************************************************/
+.donation-control{
+    border-radius: 6px;
+}
+
+.donation-header{
+    background-color: #6a3fec;
+    color: #fff; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+}
+.donation-title h3{
+    font-family:'Helvetica LT Std';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1px;
+    margin: 0;
+}
+.donation-update p{
+    margin:0;
+    line-height: 1;
+    text-align: right;
+}
+
+.donation-update p small{
+    font-family:'Helvetica LT Std';
+    font-size: 12px;
+    margin:0;
+    line-height: 1;
+}
+.donation-body {
+    padding: 20px 25px;
+}
+
+.donation-body ul {
+    margin-bottom: 0;
+    padding: 0;  
+}
+
+.list-donation{
+    margin:0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #b5b5b5;
+    margin-bottom: 20px;
+}
+
+.list-donation:last-child{
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+
+.donation-name{
+    font-family:'Helvetica LT Std';
+    font-size:16px;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.donation-description{
+    font-family:'Helvetica LT Std';
+    font-size:16px;
+    font-style: normal;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+.data-donation{
+    margin-right: 10px;
+    max-width: 75%;
+}
+
+.content-donation-value{
+    font-family:'Helvetica LT Std';
+    font-size:22px;
+    font-style: normal;
+    font-weight: bold;
+}
+.list-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.btn-donation{
+    padding: 16px 38px;
+    line-height: 1;
+    text-transform: uppercase;
+    background-color: #6a3fec;
+    color: #fff;
+}
+
+/***********************************************
+===================  Doações ===================
+************************************************/
+
+.donate{
+    margin: 50px 0;
+}
+
+.donate-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.donate-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.donate-content h3{
+    font-family:'Helvetica LT Std';
+    font-size:28px;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+@media(max-width: 768px){
+    .donate-container,
+    .donate-content{
+        flex-direction: column;
+    }
+}
+
+/***********************************************
+===================  about =====================
+************************************************/
+.about-header{
+    background-image: url('/img/banner/banner_2.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 232px;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.banner-about h3{
+    font-family:'Helvetica LT Std';
+    font-size:35px;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color:#fff;
+    text-transform: uppercase;
+}
+.about-body{
+    padding: 30px 50px;
+    margin-bottom: 30px;
+}
+.about-body p{
+    font-size: 18px;
+    font-family:'Helvetica LT Std';
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 15px;    
+}
+
+.about-body p.special-text{
+    font-size: 22px;
+    font-family:'Helvetica LT Std';
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.2;
+}
+
+/***********************************************
+===================  organizer =================
+************************************************/
+
+.organizer-container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    padding: 25px 0;
+}
+.organizer-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+    
+}
+
+.organizer-title h3{
+    font-size: 35px;
+    font-family: "Helvetica LT Std";
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1;
+    color: #a3a3a3;
+    text-transform: uppercase;
+}
+
+.organizer-body{
+    display: flex;
+    justify-content: space-around;
+}
+.organizer-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+}
+
+.organizer-brand img{
+    width:auto;
+    max-width: 200px;
+    height: auto;
+    max-height: 60px;
+}
+/***********************************************
+===================  buttons ===================
+************************************************/
+.btn{
+    max-height: 63px;
+    border-radius: 6px;
+}
+
+.btn:focus{
+    outline-width: none;
+    box-shadow: none;
+}
+
+.btn-banner{
+    font-family: "Helvetica LT Std";
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1;;
+    font-size: 22px;
+    text-transform: uppercase;
+    background-color: #6a3fec;
+    padding: 18px 35px; 
+    border: 1px solid #6a3fec;
+}
+
+.btn-donate{
+    padding:20px 60px;
+    font-family:'Helvetica LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    background-color: #6a3fec;
+    color: #fff;
+}
+
+.btn-share{
+    font-family:'Helvetica LT Std';
+    font-size:20px;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 20px 25px;
+    background-color: #008503;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.btn-share i{
+    font-size:23px;
+    line-height: 1;
+}
+
+/***********************************************
+===================  Form ======================
+************************************************/
+
+.form-donate{
+    padding: 20px 22px;
+    border-radius:6px;
+    border: 0;
+    font-family:'Helvetica LT Std';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0 30px;
+    border: 1px solid #b5b5b5;
+    max-height: 63px;
+}
+
+.form-donate:focus{
+    outline: none;
+    border: 1px solid #6a3fec;
+}
+
+/***********************************************
+===================  Footer ===================
+************************************************/
+
+.footer-container{
+    padding: 45px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.subtitle-footer{
+    font-family:'Helvetica LT Std';
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.title-footer{
+    font-family:'Helvetica LT Std';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.footer-body {
+    max-width: 68%;
+}
+
+.footer-body p{
+    font-family:'Helvetica LT Std';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 0px;
+}
+
+.footer-body p a{
+    font-family:'Helvetica LT Std';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 0px;
+    color: #fff;
+}
+
+@media(max-width:768px){
+    .footer-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }

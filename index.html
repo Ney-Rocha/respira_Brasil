@@ -1,13 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Respira Brasil</title>
+    <link rel="stylesheet" href="css/plugins/bootstrap/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <p>teste</p>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod possimus maiores rem tempore, ipsum pariatur consequuntur nobis? Repellendus deleniti repellat fugiat tempore laboriosam officia officiis architecto! Odio error culpa repellendus.</h1>
+    <main>
+        <header class="bg-blue">
+            <div class="container">
+                <nav class="navbar navbar-expand-md">
+                    <a class="navbar-brand" href="#">
+                        <div class="nav-logo">
+                            <img src="/img/logo/logo_header.png" alt="">
+                        </div>
+                        <div class="nav-name">
+                            <p>Projeto</p>
+                            <h5>Respira Brasil</h5>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <i class="material-icons">menu</i>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <!-- <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a> -->
+                            <a class="nav-item nav-link item-menu" href="#">Sobre o Projeto</a>
+                            <a class="nav-item nav-link item-menu" href="#">Prestação de contas</a>
+                            <a class="nav-item nav-link item-menu" href="#">Propósito</a>
+                            <a class="nav-item nav-link item-menu" href="#">Quero doar</a>
+                            
+                        </div>
+                    </div>
+                </nav>
+            </div><!--containee-->
+        </header>
+        
+        <section>
+            <div class="container">
+                <div class="content-banner banner_doacao">
+                    <h2 class="subtitle-banner">Seja mais um coração a pulsar</h2>
+                    <h1 class="title-banner text-green">esperança</h1>
+                    
+                    <p class="text-banner">Ajude as Santas Casas de Misericórdia de todo o Brasil a <br/> atender quem mais precisa</p>
+                    <p class="text-banner">Junte-se a nós na <strong >Luta contra o covid-19</strong></p>
+                    <div class="button-banner">
+                        <button type="button" class="btn btn-banner btn-primary">Faça sua doação</button>
+                    </div>
+                </div><!--content-banner-->
+            </div><!--container-->
+        </section><!--section banner-header-->
+        
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="target">
+                            <div class="target-body bg-green">
+                                <div class="title-target">Nossa meta</div>
+                                <div class="value-target">
+                                    R$ 42.000.000
+                                </div>
+                            </div>
+                            <div class="target-body border-green">
+                                <div class="title-target ">Valor arrecadado até o momento</div>
+                                <div class="value-target text-green">
+                                    R$<span id="value-collection">1.449.847</span> 
+                                </div>
+                                <p class="text-target">O valor arrecadado será utilizado nas Santas Casas de Misericórdia, na compra de equipamentos e insumos. Veja como o dinheiro será usado <a href="#">clicando aqui</a>.</p>
+                            </div>
+                        </div>
+                    </div> <!--col-6-->
+                    <div class="col-sm-6">
+                        <div class="donation-control  border-purple">
+                            <div class="donation-header">                                
+                                <div class="donation-title">
+                                    <h3>
+                                        <span id="donation-amount">3425</span>
+                                        doadores
+                                    </h3>                                    
+                                </div>
+                                <div class="donation-update">
+                                    <p><small>Atualizado</small></p>   
+                                    <p>
+                                        <small> às <span id="update-hour">14</span>h<span id="update-minutes">40</span></small>
+                                    </p>                                     
+                                </div> 
+                            </div><!--donation-header-->
+                            
+                            <div class="donation-body">
+                                <ul>
+                                    <li class="list-donation">
+                                        <div class="data-donation">
+                                            <div class="donation-name">Jonh Sanmple da Silva</div>
+                                            <div class="donation-description">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+                                        </div>
+                                        <div class="content-donation-value">
+                                            R$ <span id="value-donation">10.000</span>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="list-donation">
+                                        <div class="data-donation">
+                                            <div class="donation-name">Jonh Sanmple da Silva</div>
+                                            <div class="donation-description">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+                                        </div>
+                                        <div class="content-donation-value">
+                                            R$ <span id="value-donation">10.000</span>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="list-donation">
+                                        <div class="data-donation">
+                                            <div class="donation-name">Jonh Sanmple da Silva</div>
+                                            <div class="donation-description">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+                                        </div>
+                                        <div class="content-donation-value">
+                                            R$ <span id="value-donation">10.000</span>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="list-donation">
+                                        <div class="data-donation">
+                                            <div class="donation-name">Jonh Sanmple da Silva</div>
+                                            <div class="donation-description">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+                                        </div>
+                                        <div class="content-donation-value">
+                                            R$ <span id="value-donor">10.000</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="list-button">
+                                    <button class="btn btn-donation">ver mais</button>
+                                </div>
+                                
+                            </div> <!--donation-body-->
+                        </div><!--donation-control-->
+                    </div><!--col-6-->
+                </div><!--row-->
+            </div><!--container-->
+        </section><!--Section donation-->
+        
+        <section class="donate bg-gray">
+            <div class="container">
+                <div class="donate-container">
+                    <div class="donate-content">
+                       
+                        <h3 class="text-purple">faça sua doação</h3>
+                        <input type="text" placeholder="R$" class="form-donate">
+                        <button class="btn btn-donate">doar</button>
+                    </div><!--donat-content-->
+                    <div class="shared-donate">
+                        <button class="btn btn-share">
+                            compartilhar &nbsp;
+                            <i class="material-icons">share</i>
+                        </button>
+                    </div><!--shared-donate-->
+                </div><!--donate-container-->
+            </div><!--container-->
+        </section><!--section donate-->
+        
+        <section class="about">
+            <div class="container">
+                <div class="about-container">
+                    <div class="about-header">
+                        <div class="banner-about">
+                            <h3>Sobre o projeto</h3>
+                        </div>
+                    </div><!--about-header-->
+                    <div class="about-body">
+                        <p>
+                            Ajudar é a melhor maneira de fazer com que as engrenagens de nosso país possam se mover novamente.
+                        </p>
+                        <p>
+                            Muitas vidas podem ser salvas, não só sendo ajudadas mas ajudando também. O amor cura! 
+                        </p>
+                        <p>
+                            O mundo não será mais como era e as pessoas entenderão que união, empatia e autruísmo são somente expressões de nosso instinto de sobrevivência em sociedade. Instinto este gerado pela coexistência que a humanidade proporciona.
+                        </p>
+                        
+                        <p>
+                            Como um grande organismo vivo, nossa país precisa respirar, ganhar fôlego de esperança, de fé no futuro e a certeza que juntos vamos vencer esta batalha.
+                        </p>
+                        <p>
+                            Dependemos uns dos outros nessa caminhada. Conseguimos enxergar no próximo nosso próprio reflexo. 
+                        </p>
+                        <p>
+                            Agora queremos ajudar aqueles que muito nos ajudaram em nome do Amor. Aqueles que dedicaram sua vida a cuidar do nosso povo, mesmo sem condições adequadas e sem desanimar.
+                        </p>
+                        <p>
+                            Hoje nós não podemos desanimar quanto sociedade e acreditar no trabalho sério de nossos profissionais da saúde que trabalham nas Santas Casas de Misericórdia em todo Brasil.
+                        </p>
+                        <p>
+                            Eles precisam de ajuda, de força... de mais um coração pulsando nessa grande rede buscando fôlego para prosseguir.
+                        </p> 
+                        <p class="special-text text-purple">
+                            RESPIRA BRASIL!
+                        </p>
+                        
+                    </div><!--about-body-->
+                </div><!--about-container-->
+            </div><!--Container-->
+        </section><!--section about-->            
+            
+        <section class="organizer">
+            <div class="container">
+                <div class="organizer-container border-gray">
+                    <div class="organizer-title">
+                        <h3>organizadores</h3>
+                    </div>
+                    <div class="organizer-body">
+                        <div class="organizer-brand">
+                            <img src="/img/logo/empresas/diretrixOn.png" alt="Logo Diretrix">
+                        </div>
+                        <div class="organizer-brand">
+                            <img src="/img/logo/empresas/mooba.png" alt="Logo Mooba">
+                        </div>
+                        <div class="organizer-brand">
+                            <img src="/img/logo/empresas/abMail.png" alt="Logo AbMail">
+                        </div>
+                        <div class="organizer-brand">
+                            <img src="/img/logo/empresas/bancomaxima.png" alt="Logo banco Máxima">
+                        </div>
+                    </div><!--Organizer-body-->
+                </div> <!--organizer-container-->                
+            </div><!--container-->
+        </section><!--sectionorganizer-->
+            
+        <section class="donate bg-gray">
+            <div class="container">
+                <div class="donate-container">
+                    <div class="donate-content">
+                        <h3 class="text-purple">faça sua doação</h3>
+                        <input type="text" placeholder="R$" class="form-donate">
+                        <button class="btn btn-donate">doar</button>
+                    </div><!--donat-content-->
+                    <div class="shared-donate">
+                        <button class="btn btn-share">
+                            compartilhar &nbsp;
+                            <i class="material-icons">share</i>
+                        </button>
+                    </div><!--shared-donate-->
+                </div><!--donate-container-->
+            </div><!--container-->
+        </section><!--section donate-->
+        
+        <footer class="bg-blue">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-body">
+                        <div class="subtitle-footer">projeto</div>
+                        <div class="title-footer">respira brasil</div>
+                        <p>
+                            Quer saber mais sobre o Projeto Respira Brasil, tirar dúvidas, realizar algum tipo de parceria, doar ou trazer a sua empresa para a iniciativa?
+                        </p>
+                        <p>Entre em contato pelo e-mail <a href="#">email@respirabr.org</a> ou pelo telefone <a href="">(11) 3232-3232</a>.</p>
+                    </div>
+                    <div class="footer-foot">
+                        <div class="footer-logo">
+                            <img src="img/logo/logo_footer.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </footer>
+    </main>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="js/pages/main.js"></script>
 </body>
 </html>
