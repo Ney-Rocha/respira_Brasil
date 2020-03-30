@@ -23,7 +23,7 @@
                             <h5>Respira Brasil</h5>
                         </div>
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <button id="#navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
                             <i class="material-icons">menu</i>
                         </span>
@@ -34,7 +34,7 @@
                             <a class="nav-item nav-link item-menu" href="#">Sobre o Projeto</a>
                             <a class="nav-item nav-link item-menu" href="#">Prestação de contas</a>
                             <a class="nav-item nav-link item-menu" href="#">Propósito</a>
-                            <a class="nav-item nav-link item-menu" href="#">Quero doar</a>
+                            <a class="nav-item nav-link item-menu item-special" href="#">Quero doar</a>
                             
                         </div>
                     </div>
@@ -57,7 +57,7 @@
             </div><!--container-->
         </section><!--section banner-header-->
         
-        <section>
+        <section id="meta">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
@@ -66,6 +66,16 @@
                                 <div class="title-target">Nossa meta</div>
                                 <div class="value-target">
                                     R$ 42.000.000
+                                </div>
+                                <div class="value-load">
+                                    <img src="/img/Meta/pista de corrida.png" alt="">
+                                    <div class="targetbar" data-percent="10%">
+                                        <div class="targetbar-bar green"></div>
+                                        <div class="value-icons">
+                                            <img src="img/Meta/homemCorrendo.png" alt="">
+                                            <span class="targetbar-span counter">10</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="target-body border-green">
@@ -260,7 +270,7 @@
                         <p>
                             Quer saber mais sobre o Projeto Respira Brasil, tirar dúvidas, realizar algum tipo de parceria, doar ou trazer a sua empresa para a iniciativa?
                         </p>
-                        <p>Entre em contato pelo e-mail <a href="#">email@respirabr.org</a> ou pelo telefone <a href="">(11) 3232-3232</a>.</p>
+                        <p>Entre em contato pelo e-mail <a href="mailto:email@respirabr.org">email@respirabr.org</a> ou pelo telefone <a href="tel:(11)32323232">(11) 3232-3232</a>.</p>
                     </div>
                     <div class="footer-foot">
                         <div class="footer-logo">
@@ -273,8 +283,11 @@
             </div>
         </footer>
     </main>
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/plugins/bootstrap/bootstrap.min.js"></script>    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/plugins/Counter-Up-master/jquery.counterup.min.js"></script>
     <script src="js/pages/main.js"></script>
+    
 </body>
 </html>
