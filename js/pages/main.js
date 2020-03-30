@@ -32,6 +32,22 @@ $(document).ready(function(){
             
         }
     });
+    $("#div-percent").attr("data-percent","20%");
+    $( "#counter-percent" ).empty().html('20');
+    $( "#value-collection" ).empty().html('2.449.847');
+    $( "#donation-amount" ).empty().html('4.333');
+    $( "#update-hour" ).empty().html('15');
+    $( "#update-minutes" ).empty().html('44');
+    
+    function startAnimation() {
+        $('.targetbar').each(function () {
+            
+            $(this).find('.targetbar-bar').animate({
+                width: $(this).attr('data-percent')
+            }, 3000);
+        });
+        
+    };
     
     function startAnimation() {
         $('.targetbar').each(function () {
