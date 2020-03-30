@@ -569,7 +569,7 @@ header{
 }
 
 .value-action::after{
-    content: url('/img/Meta/triangulo.png');
+    content: url('../img/Meta/triangulo.png');
     background-size: contain;
     position: relative;
     bottom: -12px;
