@@ -12,9 +12,6 @@
     font-style: normal;
 }
 
-
-
-
 @font-face {
     font-family: 'Helvetica LT Std';
     src: url('../font/HelveticaLTStd-Light.eot');
@@ -117,6 +114,9 @@ body{
 
 .navbar-brand{
     display: flex;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
 }
 .nav-logo {
     width:112px;
@@ -129,6 +129,9 @@ body{
 
 .nav-name{
     display: flex;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
     margin-left: 20px;
     margin-right: 20px;
     flex-direction: column;
@@ -243,6 +246,9 @@ body{
 
 .content-banner{
     display: flex;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
     flex-direction: column;
     align-items: flex-end;
     margin-top: 40px;
@@ -368,6 +374,9 @@ body{
     background-color: #6a3fec;
     color: #fff; 
     display: flex;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
     justify-content: space-between;
     align-items: center;
     padding: 20px 25px;
@@ -405,6 +414,9 @@ body{
     margin:0;
     list-style: none;
     display: flex;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
     justify-content: space-between;
     border-bottom: 1px solid #b5b5b5;
     margin-bottom: 20px;
@@ -449,6 +461,9 @@ body{
 }
 .list-button{
     display: flex;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
     justify-content: center;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -465,6 +480,12 @@ body{
 
 .donate-container{
     display: flex;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: space-between;
     align-items: center;
     padding: 25px 0;
@@ -472,6 +493,12 @@ body{
 
 .donate-content{
     display: flex;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: space-between;
     align-items: center;
 }
@@ -487,6 +514,12 @@ body{
 .targetbar {
     background: transparent;
     display: flex;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: start;
     align-items: flex-end;
     bottom: 5px;
@@ -513,6 +546,12 @@ body{
 .value-icons{
     float: left;
     display: flex;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     flex-direction: column;
     align-items: center;
     position: relative;
@@ -574,6 +613,9 @@ body{
     background-size: cover;
     min-height: 232px;
     display:flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     align-items: flex-end;
     justify-content: center;
     padding: 30px 0;
@@ -621,12 +663,18 @@ body{
 
 .organizer-container{
     display: flex;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
     flex-direction: column;
     border-radius: 6px;
     padding: 25px 0;
 }
 .organizer-title{
     display: flex;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
     justify-content: center;
     align-items: center;
     margin-bottom: 45px;
@@ -645,10 +693,16 @@ body{
 
 .organizer-body{
     display: flex;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
     justify-content: space-around;
 }
 .organizer-brand{
     display: flex;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
     justify-content: center;
     align-items: center;
     width: 200px;
@@ -756,6 +810,9 @@ body{
     background-color: #008503;
     color: #fff;
     display: flex;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
     align-items: center;
 }
 
@@ -825,6 +882,9 @@ body{
 .footer-container{
     padding: 45px 0;
     display: flex;
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
     justify-content: space-between;
 }
 .subtitle-footer{
