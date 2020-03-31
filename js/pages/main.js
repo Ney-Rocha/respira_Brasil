@@ -22,16 +22,17 @@ $(document).ready(function(){
         $('html').removeClass('open-navbar');
     });
 
-    $(window).scroll(function (event) {
-        var $el = $('#meta');  
-        var scroll = $(window).scrollTop();
-        var skillBarTopPos = $el.position().top-420;
-        var skillBarMaior = skillBarTopPos + 40;
-        if (scroll > skillBarTopPos && scroll < skillBarMaior) {
-            startAnimation();
-            
-        }
-    });
+    // $(window).scroll(function (event) {
+    //     // var $el = $('#meta');  
+    //     // var scroll = $(window).offsetTop();
+    //     // var skillBarTopPos = $el.position().top-420;
+    //     // var skillBarMaior = skillBarTopPos + 40;
+    //     // if (scroll > skillBarTopPos && scroll < skillBarMaior) {
+    //     //     startAnimation();
+    //     // }
+    //     startAnimation()
+    // });
+
     $("#div-percent").attr("data-percent","20%");
     $( "#counter-percent" ).empty().html('20');
     $( "#value-collection" ).empty().html('2.449.847');
@@ -39,9 +40,20 @@ $(document).ready(function(){
     $( "#update-hour" ).empty().html('15');
     $( "#update-minutes" ).empty().html('44');
     
+
+    $(window).scroll(function (event) {
+        let windowTop = $(window).scrollTop() ;
+        let target = $('#div-percent').position().top - 90;
+        if($(window).width() < 425){
+            target + 160;
+        }
+        if((windowTop) > target ){
+            startAnimation()
+        }
+    });
+    
     function startAnimation() {
         $('.targetbar').each(function () {
-            
             $(this).find('.targetbar-bar').animate({
                 width: $(this).attr('data-percent')
             }, 3000);
@@ -49,15 +61,6 @@ $(document).ready(function(){
         
     };
     
-    function startAnimation() {
-        $('.targetbar').each(function () {
-            
-            $(this).find('.targetbar-bar').animate({
-                width: $(this).attr('data-percent')
-            }, 3000);
-        });
-        
-    };
     $('.counter').counterUp({
         delay: 20,
         time: 2000

@@ -302,10 +302,20 @@ header{
         padding: 20px;
     }
     .subtitle-banner{
+        font-size: 30px;
         line-height: 1.1;
     }
     .title-banner {
-        font-size: 60px;
+        font-size: 50px;
+    }
+}
+
+@media(max-width:450px){
+    .button-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 }
 
@@ -393,6 +403,12 @@ header{
     line-height: 1px;
     margin: 0;
 }
+
+.donation-title h3 span{
+    display: inline-flex;
+    line-height: 1;
+}
+
 .donation-update p{
     margin:0;
     line-height: 1;
@@ -473,6 +489,11 @@ header{
     margin-bottom: 10px;
 }
 
+@media(max-width:425px){
+    .donation-title h3 span{
+        margin-bottom: 10px;
+    }
+}
 
 /***********************************************
 ===================  Doações ===================
@@ -858,6 +879,13 @@ header{
         justify-content: center;
     }
 }
+
+@media(max-width:425px){
+    .btn-banner{
+        font-size:18px
+    }
+}
+
 /***********************************************
 ===================  Form ======================
 ************************************************/
