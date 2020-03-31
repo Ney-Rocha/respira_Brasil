@@ -48,7 +48,8 @@ $(document).ready(function(){
             target + 160;
         }
         if((windowTop) > target ){
-            startAnimation()
+            main()          
+            
         }
     });
     
@@ -58,9 +59,16 @@ $(document).ready(function(){
                 width: $(this).attr('data-percent')
             }, 3000);
         });
-        
     };
     
+    async function main(){
+        var quote = await startAnimation();
+        setTimeout(function(){
+            $('#corredor').attr('src','img/Meta/parado.gif');
+        },3000) 
+        
+    }
+
     $('.counter').counterUp({
         delay: 20,
         time: 2000
