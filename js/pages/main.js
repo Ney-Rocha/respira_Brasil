@@ -48,7 +48,7 @@ $(document).ready(function(){
             target + 160;
         }
         if((windowTop) > target ){
-            main()          
+            main()
             
         }
     });
@@ -61,8 +61,8 @@ $(document).ready(function(){
         });
     };
     
-    async function main(){
-        var quote = await startAnimation();
+    function main(){
+        startAnimation();
         setTimeout(function(){
             $('#corredor').attr('src','img/Meta/parado.gif');
         },3000) 
